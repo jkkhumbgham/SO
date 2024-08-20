@@ -14,21 +14,22 @@ devuelve un puntero señalando el inicio del espacio de memoria reservado.
 #include <stdlib.h>
 
 int main(){
- 
-  int *p1=calloc(4,sizeof(int));
-  int *puntero=calloc(10,sizeof(int));
-  int *p3=calloc(5,sizeof *p3);
+  //bloque de declaracion de variables
+  int *p0=calloc(4,sizeof(int));//se declara el puntero p0 y se le asigna memoria para 4 enteros
+  int *p1=calloc(10,sizeof(int));//se declara el puntero p1 y se le asigna memoria para 10 enteros
+  int *p2=calloc(5,sizeof *p2);//se declara el puntero p2 y se le asigna memoria para 5 espacios del tamaño del p2 que es int
 
-  printf("Construccion y calcculo de la secuencia de los primeros 10 terminos\n");  
+  printf("Construccion y calculo de la secuencia de los primeros 10 terminos\n");  
+ //bucle para llenar y presentar el contenido de p1
   for(int i=0;i<10;i++){
-    *(puntero+i)=i;
-    printf("El valor de la secuencia es: %d \n",*(puntero+i));  
+    *(p1+i)=i;//se asigna a el contenido de p1 el valor de i
+    printf("El valor de la secuencia es: %d \n",*(puntero+i));  //se imprime el numero recien asignado
   }
 
-  
-  free(p1);
-  free(puntero);
-  free(p3);
+  //bloque para liberar las memorias reservadas
+  free(p0);//se libera la memoria de p0
+  free(p1);//se libera la memoria de p1
+  free(p2);//se libera la memoria de p2
 
   return 0;
 }
