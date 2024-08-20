@@ -12,22 +12,22 @@ devuelve un puntero señalando al comienzo de la memoria recien reservada.
 #include <stdlib.h>
 
 int main(){
-  
-  int *bloque00=malloc(4*sizeof(int));
-  int *puntero=malloc(15*sizeof(*puntero));
-  
+  //declaracion de los punteros donde se guardara la memoria asignada
+  int *bloque=malloc(4*sizeof(int));//asignacion de memoria para 4 enteros
+  int *puntero=malloc(15*sizeof(*puntero));//asignacion de memoria para 15 enteros
+  //bucle para llenar los espacios de memoria asignados en bloque
   for(int i=0;i<4;i++){
-    bloque00[i]=i*2;
-    printf("El valor de memoria reservada bloque00[%d]= %d\n",i,bloque00[i]);  
+    bloque[i]=i*2;
+    printf("El valor de memoria reservada bloque00[%d]= %d\n",i,bloque[i]);  
   }
   
   if(puntero!=NULL){
-    *(puntero+7)=9889; 
+    *(puntero+7)=1467; //se le asigna a la posicion 8 de los espacios reservados en puntero el numero 1467 
     printf("El valor de la 8va posicion de puntero es:%d \n",*(puntero+7));  
   }
 
   
-  free(bloque00);
-  free(puntero);
+  free(bloque);//se libera la memoria de bloque
+  free(puntero);//se libera la memoria de puntero
   return 0;
 }
