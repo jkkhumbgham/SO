@@ -39,7 +39,7 @@ int main() {
     //bloque de impresion de valores del nuevo arreglo
     printf("Arreglo redimensionado:\n");
     for (int i = 0; i < 10; i++) {
-        printf("%d ", new_arr[i]);
+        printf("%d ", arr[i]);
     }
     printf("\n");
 
