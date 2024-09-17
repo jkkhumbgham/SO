@@ -30,14 +30,11 @@ int main() {
     printf("\n");
 
     // bloque de cambio de tamaño del arreglo
-    int *new_arr = realloc(arr, 10 * sizeof(int));// Usamos realloc para cambiar el tamaño del arreglo a 10 enteros
-    if(new_arr!=NULL){
-      free(arr);//si el cambio se efectua correctamente se limpia la memoria de arr
-    }
+    arr = realloc(arr, 10 * sizeof(int));// Usamos realloc para cambiar el tamaño del arreglo a 10 enteros
 
     // Bloque de inicializacion del nuevo arreglo
     for (int i = 5; i < 10; i++) {
-        new_arr[i] = i + 1;// debido a que ya tenemos 5 datos se llena desde new_arr[5] con el valor de i+1
+        arr[i] = i + 1;// debido a que ya tenemos 5 datos se llena desde new_arr[5] con el valor de i+1
     }
     //bloque de impresion de valores del nuevo arreglo
     printf("Arreglo redimensionado:\n");
@@ -47,7 +44,7 @@ int main() {
     printf("\n");
 
     
-    free(new_arr); // liberamos la memoria de new_arr
+    free(arr); // liberamos la memoria de new_arr
 
     return 0;
 }
