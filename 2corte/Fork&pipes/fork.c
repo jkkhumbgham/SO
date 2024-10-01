@@ -48,7 +48,7 @@ int main(int argc, char *argv[]){
     for(int i = 0; i < p; i++)
         creacion_fork(i); // Crear un nuevo proceso en cada iteración
 
-    printf("\n---\n\n"); // Separador visual en la salida
+    printf("\n---\n\n");
     return 0; // Retornar 0 para indicar que el programa terminó correctamente
 }
 
