@@ -3,10 +3,10 @@ Pontificia universidad Javeriana
 Autor: Juan Alba
 Fecha: 23/07/24
 Materia: Sistemas Operativos
-Tema: Comunicación entre procesos con FIFO
+Tema: Comunicación entre procesos con pipes
 
 Este programa implementa un cliente FIFO (First In First Out) que envía 
-mensajes a través de un pipe nombrado (FIFO). El cliente envía mensajes 
+mensajes a través de un named pipe (FIFO). El cliente envía mensajes 
 infinitamente hasta que el usuario ingrese la palabra "end" para terminar 
 la comunicación.
 **************************************************************************/
