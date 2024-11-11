@@ -1,0 +1,6 @@
+Si esta leyendo este documento significa que va a elaborara el taller de evaluacion y para eso necesita saber lo siguiente:
+en el archivo de fuentes encuentras todos los programas que necesitas con su respectiva documentacion.
+Para empezar el taller es necesario descargar estos archivos fuentes entre estos se encuentra:
+mm_clasico.c : en este archivo encuentras toda la implementacion de multiplicacion de matrices con el metodo clasico
+mm_transpuesta.c : en este archivo encuentras toda la implementacion de multiplicacion de matrices con el metodo transpuesto
+lanza.pl : este archivo perl esta para automatizar las pruebas
