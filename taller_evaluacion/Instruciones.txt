@@ -4,3 +4,8 @@ Para empezar el taller es necesario descargar estos archivos fuentes entre estos
 mm_clasico.c : en este archivo encuentras toda la implementacion de multiplicacion de matrices con el metodo clasico
 mm_transpuesta.c : en este archivo encuentras toda la implementacion de multiplicacion de matrices con el metodo transpuesto
 lanza.pl : este archivo perl esta para automatizar las pruebas
+El archivo lanza.pl es solo para la automatizacion asi que puedes cambiar el codigo de acuerdo a lo que necesites.
+Una vez descargados los archivos vas a necesitar convertir el lanza.pl de un archivo perl a un ejecutable,
+para esto vamos a usar el comando chmod +x lanza.pl esto cambiara nuestro archivo a un ejecutable.
+Ahora tenemos que compilar ambos metodos, es importante recordar que el ejecutable debe tener el mismo nombre
+que el especificado en lanza.pl 
